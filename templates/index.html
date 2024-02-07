@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+  <button
+    hx-get="/plusone"
+    hx-swap="outerHTML"
+    hx-target="next p"
+    hx-include="next p">
+    +
+  </button>
+  <button
+    hx-get="/minusone"
+    hx-swap="outerHTML"
+    hx-target="next p"
+    hx-include="next p">
+    -
+  </button>
+  <p>
+    0
+    <input type="hidden" name="count" value=0/>
+  </p>
+</body>
+</html>
