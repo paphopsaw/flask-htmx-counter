@@ -10,5 +10,5 @@ source env/bin/activate
 pip install -r requirements.txt
 
 # Run server
-flask --app hello run   
+flask --app counter run
 ```

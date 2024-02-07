@@ -9,8 +9,8 @@ app = Flask(__name__)
 def index(name=None):
     return render_template('index.html', name=name)
 
-@app.route("/plusone")
-def plusone():
+@app.route("/plusOne")
+def plus_one():
     count = int(request.args.get('count').replace('/',''))
     return '''
       <p>
@@ -19,8 +19,8 @@ def plusone():
       </p>
       '''.format(count = count + 1)
 
-@app.route("/minusone")
-def minusone():
+@app.route("/minusOne")
+def minus_one():
     count = int(request.args.get('count').replace('/',''))
     return '''
       <p>
