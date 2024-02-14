@@ -13,7 +13,7 @@ def index(name=None):
 def plus_one():
     count = int(request.args.get('count').replace('/',''))
     return '''
-      <p>
+      <p id="number">
         {count}
         <input type="hidden" name="count" value={count}/>
       </p>
@@ -23,7 +23,7 @@ def plus_one():
 def minus_one():
     count = int(request.args.get('count').replace('/',''))
     return '''
-      <p>
+      <p id="number">
         {count}
         <input type="hidden" name="count" value={count}/>
       </p>

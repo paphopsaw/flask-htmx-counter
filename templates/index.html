@@ -7,18 +7,18 @@
   <button
     hx-get="/plusOne"
     hx-swap="outerHTML"
-    hx-target="next p"
-    hx-include="next p">
+    hx-target="#number"
+    hx-include="#number">
     +
   </button>
   <button
     hx-get="/minusOne"
     hx-swap="outerHTML"
-    hx-target="next p"
-    hx-include="next p">
+    hx-target="#number"
+    hx-include="#number">
     -
   </button>
-  <p>
+  <p id="number">
     0
     <input type="hidden" name="count" value=0/>
   </p>
